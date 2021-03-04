@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    tools:context=".sinhvien.SinhVienFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:translationZ="-100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="30dp"
+        app:cardCornerRadius="5dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_dangXuat"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#00000000"
+        android:src="@drawable/ic_baseline_close_24"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/img_sinhvien_avt"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+
+        android:src="@drawable/f1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+
+        android:id="@+id/tv_sinhvien_ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nguyễn Đức Khang"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_sinhvien_avt" />
+
+    <TextView
+
+        android:id="@+id/tv_sinhvien_mssv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18520891"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sinhvien_ten" />
+
+    <TextView
+
+        android:id="@+id/tv_sinhvien_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="18520891@gm.uit.edu.vn"
+
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sinhvien_mssv" />
+
+    <TextView
+
+        android:id="@+id/tv_sinhvien_ngaysinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:padding="10dp"
+        android:text="04-12-2000"
+
+
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sinhvien_email" />
+
+
+
+    <TextView
+        android:id="@+id/tv_sinhvien_lopsinhhoat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:padding="10dp"
+        android:text="KTPM2018"
+
+
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sinhvien_ngaysinh" />
+
+    <TextView
+        android:id="@+id/tv_sinhvien_hedaotao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:padding="10dp"
+        android:text="CQUI"
+
+
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sinhvien_lopsinhhoat" />
+</androidx.constraintlayout.widget.ConstraintLayout>
